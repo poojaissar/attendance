@@ -1,21 +1,13 @@
-from django.urls import path,include
-from API import views as my_views
-from . import views
-from rest_framework import routers
 from django.contrib import admin
+from django.urls import path,include
+#from rest_framework.authtoken import views
+from API import views
 
-router = routers.DefaultRouter()
-#router.register(r'users',Register) 
-
-
-router.register(r'newuser',my_views.NewUserViewSets)
 urlpatterns = [
-  
-  #path('admin/', admin.site.urls),
-  path('api/newuser/', include(router.urls)),
-  
-
+  path('admin/', admin.site.urls),
+  path('api/',include('API.urls')),
+  #path('api-token-auth', views.obtain_auth_token)
+  path('', views.homePage),
+  path('login/', views.loginPage),
+  path('signup/', views.signUpPage),
 ]
-
-
-

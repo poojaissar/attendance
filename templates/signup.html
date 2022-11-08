@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 1</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo {
+        margin: 2px;
+        padding: 2px;
+        float: left;
+        width: 50px;
+        height: 40px;
+        background-color: black;
+    }
+
+    h1 {
+        background-color: #85c1e9;
+        text-align: center;
+        height: 50px;
+        width: 99%;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .nav {
+        background-color: #b2babb;
+        text-align: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: bold;
+
+
+    }
+
+    .nav a.active {
+        background-color: #2e86c1;
+        color: white;
+
+    }
+
+    .main {
+        background-color: d6eaf8;
+    }
+
+
+    body {
+        text-align: center;
+    }
+
+    form {
+        display: inline-block;
+    }
+
+    table {
+        margin: 2px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        background-color: #c3f7d9;
+        /*justify-content: space-between;
+        border: 1px solid black;*/
+        font-size: 13px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 10px;
+        border: 2px solid black;
+        padding: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .signinbtn {
+        background-color: #2e86c1;
+        border: 2px solid #2e86c1;
+        color: white;
+        margin: 2px;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 11px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        border-radius: 10px;
+    }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+        background-color: #b2babb;
+        color: black;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+
+<body>
+    <div class="logo">
+        <img src="https://upwork-usw2-prod-assets-static.s3.us-west-2.amazonaws.com/org-logo/1387073381323780096"
+            alt="">
+    </div>
+    <h1 style="border:1px groove #abb2b9;">Attendance Marking System</h1>
+    <div style="border:1px groove #abb2b9; width:99%;height:50px" class="nav">
+        <a style="margin: 2px;padding: 10px; border: 1px solid blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration: none;"class="active" href="#home">Create User</a>
+        <a style="margin: 2px;padding: 10px; border: 1px solid blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration: none;"class="active" href="#topics">Drop User</a>
+        <a style="margin: 2px;padding: 10px; border: 1px solid blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration: none;"class="active" href="#signup">Update User</a>
+        <a style="margin: 2px;padding: 10px; border: 1px solid blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration: none;"class="active" href="#signin">Sign Out</a>
+    </div>
+    <div style="border:1px groove #abb2b9; width:20%;height:510px;float: left;background-color: #d6eaf8;">
+        <h3
+            style="margin-top:10px;text-align: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            Reporting</h3><br><br>
+        <a href="#TodaySettings"
+            style=" display: flex; background-color: #2e86c1;font-size: 18px;border: 1px solid blue; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;">
+            Today Settings</a><br>
+        <a href="#TodaysAbsentees"
+            style="  display: flex; background-color: #2e86c1;font-size: 18px;border: 1px solid blue; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;">
+            Today's Absentees</a><br>
+        <a href="#ParticularUserAttendance"
+            style=" display: flex; background-color: #2e86c1;font-size: 18px;border: 1px solid blue; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;">
+            Particular User Attendance</a><br>
+        <h3
+            style="margin-top:10px;text-align: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            Settings</h3><br><br>
+        <a href="#SSetHolidays"
+            style=" display: flex; background-color: #2e86c1;font-size: 18px;border: 1px solid blue; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;">
+            Set Holidays</a><br>
+        <a href="#SetTimings"
+            style=" display: flex; background-color: #2e86c1;font-size: 18px;border: 1px solid blue; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;;">
+            Set Timings</a><br>
+
+    </div>
+
+    <div style="border:1px groove #abb2b9; width: 79%;height:510px;float: left; background-color: #d6eaf8; " class="main">
+
+        <h2
+            style="margin: 15px; text-align: center; font-size: 25px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            SignUp into the Attendance Marking System</h2>
+        <form>
+            <table border='0' cellpadding='0' cellspacing='0' align='center'>
+                <tr>
+                    <td align="left">EmpId:</td>
+                    <td><input type='text' name='employee'
+                            style="width:300px;height: 20px; border-radius: 5px;border: 1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="left">First Name:</td>
+                    <td><input type='text' name='fname'
+                            style="width:300px;height: 20px;border-radius: 5px;border: 1px solid black; "></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="left">Last Name:</td>
+                    <td><input type='text' name='lname'
+                            style="width:300px;height: 20px;border-radius: 5px;border: 1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="left">EmailId:</td>
+                    <td><input type='text' name='email'
+                            style="width:300px;height: 20px;border-radius: 5px;border: 1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="left">Password:</td>
+                    <td><input type="Password" name="Pass" id="Pass"
+                            style="width:300px;height: 20px;border-radius: 5px;border: 1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="left">Phone Number:</td>
+                    <td><input type='text' name='pnumber'
+                            style="width:300px;height: 20px;border-radius: 5px;border: 1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="left">Department Id:</td>
+                    <td><select name="Department" id="depart"
+                            style="width:300px;height: 20px;border-radius: 5px;border: 1px solid black;">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="left">Employee Type:</td>
+                    <td><select name="employee" id="emp"
+                            style="width:300px;height: 20px;border-radius: 5px; border: 1px solid black;">
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <td align="left">Report To:</td>
+                <td><select name="report" id="reportid"
+                        style="width:300px;height: 20px;border-radius: 5px;border: 1px solid black;">
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select></td>
+                </tr>
+
+
+            </table>
+            <button type="signUp" class="signinbtn">SignUp</button>
+            <a href="C:\Users\acer\Desktop\web app discovery\templates1\2.html">
+                <button type="login" class="signinbtn">Login</button>
+            </a>
+
+
+        </form>
+
+    </div>
+
+    <div style="border:1px groove #abb2b9; margin-top: 510px;" class="footer">
+        <p style="font-size: 15px; text-align: center;">WEB APP DISCOVERY</p>
+    </div>
+
+
+</body>
+
+</html>

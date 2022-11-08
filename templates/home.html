@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template 3</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo {
+        margin:2px;
+        margin-top: 15px;
+        padding: 2px;
+        float: left;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+    }
+
+    h1 {
+        background-color: #85c1e9;
+        text-align: center;
+        height: 80px;
+        width: 100%;
+        color: black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+
+    .nav {
+        background-color: #b2babb;
+        text-align: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: bold;
+
+
+    }
+
+    .nav a.active {
+        background-color: #2e86c1;
+        color: white;
+
+    }
+
+    .main {
+        background-color: #d6eaf8;
+    }
+
+
+
+
+    .footer {
+        padding: 10px;
+        background-color: #b2babb;
+        color: black;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+</style>
+
+<body>
+    <div class="logo">
+        <img src="https://upwork-usw2-prod-assets-static.s3.us-west-2.amazonaws.com/org-logo/1387073381323780096"
+            alt="">
+    </div>
+    <h1 style="border:1px groove #abb2b9 ;">Attendance Marking System
+        <p style="margin: 10px; font-size: 15px; text-align: center;">206,Tricity Plaza,Sector-20,Peer Muchalla Road,Punjab- 160104, Zirakpur, Punjab 140603</p></h1>
+    <div style="border:1px groove #abb2b9 ; width:100%;height:50px" class="nav">
+        <a style=" margin: 2px;padding: 10px; border: 1px solid blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
+            class="active" href="#marktodayattendance">Mark Today Attendance</a>
+        <a style="margin: 2px;padding: 10px; border: 1px solid blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
+            class="active" href="#attendancerectification">Attendance Rectification</a>
+        <a style="margin: 2px;padding: 10px; border: 1px solid blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
+            class="active" href="#signout">Sign Out</a>
+    </div>
+    <div style="border:1px groove  #abb2b9; width:15%;height:518px;float: left;background-color: #d6eaf8;">
+        <h3
+            style="margin-top:10px;text-align: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+            Reporting</h3><br><br>
+        
+            <a href="#PrintCurrentMonth "
+                style="margin-left: 2px;  display: flex; background-color: #2e86c1;font-size: 18px;border: 1px solid blue; color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-decoration: none;">
+                Print Current Month</a><br>
+            <a href="#SelectCustomDate"
+                style="margin-left: 2px; display: flex;background-color:#2e86c1;font-size: 18px; color: white; border:1px solid blue; text-align: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration: none;">
+                Select Custom Date</a><br>
+            <a href="#PrintTotalLeaves"
+                style="margin-left: 2px; display: flex;background-color:#2e86c1;font-size: 18px; color: white; border:1px solid blue; text-align: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration: none;">
+                Print Total Leaves</a><br>
+            <a href="#PrintLateMarks"
+                style="margin-left: 2px; display: flex;background-color:#2e86c1;font-size: 18px; color: white; border:1px solid blue; text-align: left; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-decoration: none;">
+                Print Late Marks</a><br>
+    </div>
+
+    <div style="border:1px groove  #abb2b9; width: 84%;height:480px;float: left;" class="main">
+    </div>
+
+    <div style="border:1px groove  #abb2b9; margin-top: 480px; " class="footer">
+        <p style="font-size: 15px; text-align: left;">Your Current Location Address</p>
+    </div>
+
+
+</body>
+
+</html>
